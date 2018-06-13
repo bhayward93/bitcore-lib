@@ -22,7 +22,9 @@ The regtest network is useful for development as it's possible to programmatical
 
 ## Setting the Default Network
 Most projects will only need to work with one of the networks. The value of `Networks.defaultNetwork` can be set to `Networks.testnet` if the project will need to only to work on testnet (the default is `Networks.livenet`).
+```bitcore.Networks.defaultNetwork = bitcore.Networks.testnet;```
 
+This must be done following the instantiation of Bitcore.
 ## Network constants
 The functionality of testnet and livenet is mostly similar (except for some relaxed block validation rules on testnet). They differ in the constants being used for human representation of base58 encoded strings. These are sometimes referred to as "version" constants.
 
